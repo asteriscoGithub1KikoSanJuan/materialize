@@ -8,34 +8,62 @@
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		Declarar clases para video como fondo !
+	  <style>
+		.fullscreen-bg {
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			overflow: hidden;
+			z-index: -100;
+			}
+
+		.fullscreen-bg__video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			}
+	  </style>
     </head>
 
-    <body class="pink lighten-3">
+    <body class="white-text pink lighten-3">
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
 	  
 	  <div class="container">
+		Video de fondo usando las Clases fullscreen-bg & fullscreen-bg_video !!!
+	  <div class="fullscreen-bg">
+    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+        <source src="img/videoGOT.mp4" type="video/mp4">
+    </video>
+</div>
         <!-- Page Content goes here -->
 	  <div class="card-panel grey"><span class="white-text">This is a card panel with a teal lighten-2 class
       </span>
 	  </div>
-	  <div class="card-panel grey"><span class="white-text">This is a card panel with a teal lighten-2 class
+	  <!-- <div class="valign-wrapper"> -->
+	  <div class="card-panel grey"><span class=" valign white-text">This is a card panel with a teal lighten-2 class
       </span>
 	  </div>
-		<div class="row">
-			<div class="blue col s1">1</div>
-			<div class="blue col s1">2</div>
-			<div class="blue col s1">3</div>
-			<div class="blue col s1">4</div>
-			<div class="blue col s1">5</div>
-			<div class="blue col s1">6</div>
-			<div class="blue col s1">7</div>
-			<div class="blue col s1">8</div>
-			<div class="blue col s1">9</div>
-			<div class="blue col s1">10</div>
-			<div class="blue col s1">11</div>
-			<div class="blue col s1">12</div>
+			Alineacion vertical en un div de 400px con valign-wrapper !!!
+		<div class="row blue valign-wrapper" style="height:400px">
+			<div class="col s1">1</div>
+			<div class="col s1">2</div>
+			<div class="col s1">3</div>
+			<div class="col s1">4</div>
+			<div class="col s1">5</div>
+			<div class="col s1">6</div>
+			<div class="col s1">7</div>
+			<div class="col s1">8</div>
+			<div class="col s1">9</div>
+			<div class="col s1">10</div>
+			<div class="col s1">11</div>
+			<div class="col s1">12</div>
 		</div>
 		<div class="row">
 			<div class="yellow col s12">This div is 12-columns wide</div>
@@ -76,13 +104,20 @@
 				<h5>Section 3</h5>
 				<p>Stuff</p>
 			</div>
+						Responsibilidad del tamaño de col s12 movil m6 tablet l3 desktop !!!<br>
+						Responsibilidad del tamaño de la letra con flow-text !!!
 		<div class="row">
 			<div class="green grid-example col s12 m6 l3"><span class="flow-text">I am always full-width (col s12)</span></div>
 			<div class="red grid-example col s12 m6 l3"><span class="flow-text">I am full-width on mobile (col s12 m6)</span></div>
 			<div class="yellow grid-example col s12 m6 l3"><span class="flow-text">I am full-width on mobile (col s12 m6)</span></div>
 			<div class="hide-on-small-only blue grid-example col s12 m6 l3"><span class="flow-text">I am full-width on mobile (col s12 m6)</span></div>
-		</div>	
-		
+		</div>
+		 <!-- <div class="video-container"> -->
+			<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/jmSeJYigyG8" frameborder="0" allowfullscreen></iframe> -->
+		<!-- </div> -->
+		<!-- <video class="responsive-video" controls> -->
+		<!-- <source src="img/videoGOT.mp4" type="video/mp4"> -->
+		<!-- </video> -->
 	  </div>      
 	</body>
   </html>
